@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes - SAZO Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 48px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .list {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+            border-bottom: 1px solid #f0f0f0;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item:hover {
+            background: #fafafa;
+        }
+
+        .item-title {
+            font-weight: 500;
+        }
+
+        .item-meta {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .badge {
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .badge.lofi {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge.midfi {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .badge.hifi {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .empty {
+            padding: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prototypes</h1>
+        <p class="subtitle">SAZO Design Team</p>
+
+        <div class="section">
+            <h2>Lo-Fi</h2>
+            <div class="list">
+                <a href="lo-fi/careers-home.html" class="item">
+                    <div>
+                        <div class="item-title">Careers - Home</div>
+                        <div class="item-meta">콘텐츠 흐름 확인용</div>
+                    </div>
+                    <span class="badge lofi">Lo-Fi</span>
+                </a>
+                <a href="lo-fi/careers-culture.html" class="item">
+                    <div>
+                        <div class="item-title">Careers - Culture</div>
+                        <div class="item-meta">콘텐츠 흐름 확인용</div>
+                    </div>
+                    <span class="badge lofi">Lo-Fi</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Mid-Fi</h2>
+            <div class="list">
+                <div class="empty">아직 없음</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Hi-Fi</h2>
+            <div class="list">
+                <div class="empty">아직 없음</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
